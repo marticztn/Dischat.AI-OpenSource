@@ -5,5 +5,4 @@
 
 IMG_SIZE_512_PRICE = 0.018
 SERVICE_PRICE = 0.05   # Discord server fee (Added by me)
-
-# TOTAL: 0.068 / image
+TOTAL_PRICE = IMG_SIZE_512_PRICE + SERVICE_PRICE    # TOTAL: 0.068 / image
