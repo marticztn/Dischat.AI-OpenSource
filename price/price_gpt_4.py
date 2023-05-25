@@ -1,13 +1,11 @@
 import tiktoken
-import os.path
 
 # Documentation: https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/chatgpt?pivots=programming-language-chat-completions#managing-conversations
 
 MODEL = 'gpt-4-0314'
 PROMPT_PRICE = 0.03     # 0.03 / 1k tokens -> Input price
 CMPL_PRICE = 0.06       # 0.06 / 1k tokens -> Output price
-SERVICE_PRICE = 0.05   # Discord server fee (Added by me)
-FILENAME = os.path.dirname(__file__) + '/../users.json'
+SERVICE_PRICE = 0.05    # Discord server fee (Added by me)
 encoding = tiktoken.encoding_for_model(MODEL)
 
 def getTokenSizeAndPriceFromMsg(input: str, output: str) -> tuple:
