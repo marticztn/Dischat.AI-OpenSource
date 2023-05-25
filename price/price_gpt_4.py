@@ -1,6 +1,6 @@
-import tiktoken
-
 # Documentation: https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/chatgpt?pivots=programming-language-chat-completions#managing-conversations
+
+import tiktoken
 
 MODEL = 'gpt-4-0314'
 PROMPT_PRICE = 0.03     # 0.03 / 1k tokens -> Input price
